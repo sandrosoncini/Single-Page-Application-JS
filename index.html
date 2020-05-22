@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API Amazing Amazon</title>
+
+    <link rel="stylesheet" href="styles/master.css" />
+	<script src="script/main.js"></script>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="" data-target="product-index">Products</a> |
+            <a href="" data-target="product-new">New Product</a>
+        </nav>
+    </header>
+
+    <main class="page" id="product-show"> </main>
+    <main class="page" id="product-index">
+        <h1>Products</h1>
+        <ul class="product-list"></ul>
+    </main>
+
+    <main class="page" id="product-new">
+        <h1>New product</h1>
+        <form id="new-product-form">
+            <div>
+                <label for="title">Title</label><br />
+                <input type="text" name="title" id="title" />
+            </div>
+            <div>
+                <label for="price">price</label><br />
+                <input type="number" name="price" id="price" />
+            </div>
+            <div>
+                <label for="description">Description</label><br />
+                <textarea name="description" id="description"></textarea>
+            </div>
+            <input type="submit" value="Create Product" />
+        </form>
+    </main>
+    
+</body>
+</html>
